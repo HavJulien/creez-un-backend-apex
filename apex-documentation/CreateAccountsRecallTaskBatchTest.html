@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Code documentation</title>
+    <meta charset="UTF-8">
+    <script type="module" src="./assets/index.js"></script>
+    <script type="module" src="./assets/search-idx.js"></script>
+    <script type="module" src="./assets/search.js"></script>
+    <script charset="UTF-8" src="./assets/highlight.js"></script>
+    <script charset="UTF-8" src="./assets/mark.js"></script>
+    <script charset="UTF-8" src="./assets/lunr.js"></script>
+    <link rel="stylesheet" href="./assets/highlight.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/index.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+
+  <body>
+    <div id="side-bar">
+
+      <div id="logo-container">
+        <div class="title">
+          Code documentation
+        </div>
+        <img src="assets/logo.png" />
+        <div class="subtitle">
+          Creez un backend Apex
+        </div>
+      </div>
+      <div id="search-wrapper">
+        <div class="search-icon"></div>
+        <input id="search-input" type="text" autocomplete="off" placeholder="Search...">
+      </div>
+      <ul id="search-results" class=""></ul>
+      <div class="navbar">
+        <nav role="navigation">
+          <a class="nav-header" id="home" href="javascript:void(0)" onclick="goToLocation('index.html');">
+            Home
+          </a>
+          <details id="@last_modified_by_:_HAVARD_Julien" class="group-name">
+            <summary id="header-@last_modified_by_:_HAVARD_Julien" class="nav-header">
+              <span>@last modified by  : HAVARD Julien</span>
+            </summary>
+            <ul>
+              <!-- menu items -->
+              <li title="CreateAccountsRecallTaskBatch" id="item-CreateAccountsRecallTaskBatch" class="nav-item class " onclick="goToLocation('CreateAccountsRecallTaskBatch.html');">
+                <a tabindex="1" href="javascript:void(0)">CreateAccountsRecallTaskBatch</a>
+              </li>
+              <li title="CreateAccountsRecallTaskBatchTest" id="item-CreateAccountsRecallTaskBatchTest" class="nav-item class " onclick="goToLocation('CreateAccountsRecallTaskBatchTest.html');">
+                <a tabindex="1" href="javascript:void(0)">CreateAccountsRecallTaskBatchTest</a>
+              </li>
+              <li title="ListUtils" id="item-ListUtils" class="nav-item class " onclick="goToLocation('ListUtils.html');">
+                <a tabindex="1" href="javascript:void(0)">ListUtils</a>
+              </li>
+              <li title="ListUtilsTest" id="item-ListUtilsTest" class="nav-item class " onclick="goToLocation('ListUtilsTest.html');">
+                <a tabindex="1" href="javascript:void(0)">ListUtilsTest</a>
+              </li>
+              <li title="OrderService" id="item-OrderService" class="nav-item class " onclick="goToLocation('OrderService.html');">
+                <a tabindex="1" href="javascript:void(0)">OrderService</a>
+              </li>
+              <li title="OrderServiceTest" id="item-OrderServiceTest" class="nav-item class " onclick="goToLocation('OrderServiceTest.html');">
+                <a tabindex="1" href="javascript:void(0)">OrderServiceTest</a>
+              </li>
+              <li title="TestDataFactory" id="item-TestDataFactory" class="nav-item class " onclick="goToLocation('TestDataFactory.html');">
+                <a tabindex="1" href="javascript:void(0)">TestDataFactory</a>
+              </li>
+              <li title="OrderTrigger" id="item-OrderTrigger" class="nav-item class " onclick="goToLocation('OrderTrigger.html');">
+                <a tabindex="1" href="javascript:void(0)">OrderTrigger</a>
+              </li>
+              <li title="OrderTriggerTest" id="item-OrderTriggerTest" class="nav-item class " onclick="goToLocation('OrderTriggerTest.html');">
+                <a tabindex="1" href="javascript:void(0)">OrderTriggerTest</a>
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </div>
+    <table id="content">
+      <tr>
+        <td class="scoping-panel">
+          Show: <input type="checkbox" checked="true" id="cbx-all" onclick="toggleAllScopes(this.checked);" />
+          <label for="cbx-all">All</label>&nbsp;&nbsp;
+          <input type="checkbox" checked="true" id="cbx-global" onclick="toggleScope('global', this.checked);" />
+          <label for="cbx-global">
+            global
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-public" onclick="toggleScope('public', this.checked);" />
+          <label for="cbx-public">
+            public
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-protected" onclick="toggleScope('protected', this.checked);" />
+          <label for="cbx-protected">
+            protected
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-private" onclick="toggleScope('private', this.checked);" />
+          <label for="cbx-private">
+            private
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-testmethod" onclick="toggleScope('testmethod', this.checked);" />
+          <label for="cbx-testmethod">
+            testMethod
+          </label>&nbsp;&nbsp;<input type="checkbox" checked="true" id="cbx-webservice" onclick="toggleScope('webservice', this.checked);" />
+          <label for="cbx-webservice">
+            webService
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="doc-page">
+
+          <div class="section">
+
+            <h2 class="class-title top-level-type" id="CreateAccountsRecallTaskBatchTest">
+              <span>CreateAccountsRecallTaskBatchTest</span>
+            </h2>
+            <div class="class-container">
+
+              <div class="class-description">
+                : Test class for CreateAccountsRecallTaskBatch
+              </div>
+              <div class="class-subtitle">
+                Signature
+              </div>
+              <div class="class-annotations">@isTest</div>
+              <div class="class-signature">
+                public with sharing class CreateAccountsRecallTaskBatchTest
+              </div>
+              <div class="class-subtitle">
+                Author
+              </div>
+              <div class="class-subtitle-description">
+                : HAVARD Julien
+              </div>
+            </div>
+            <div class="subsection methods">
+              <h3 class="subsection-title methods">CreateAccountsRecallTaskBatchTest Methods</h3>
+              <div class="methods-container">
+                <ul class="methods-toc">
+                  <li class="method testmethod">
+                    <a class="methods-toc__entry " href="#CreateAccountsRecallTaskBatchTest.testCreateAccountsRecallTaskBatch">
+                      testCreateAccountsRecallTaskBatch ()
+                    </a>
+
+                  </li>
+                </ul>
+                <div class="method testmethod">
+                  <h4 class="method-title " id="CreateAccountsRecallTaskBatchTest.testCreateAccountsRecallTaskBatch">
+                    <span>testCreateAccountsRecallTaskBatch()</span>
+                  </h4>
+                  <div class="method-subtitle">
+                    Signature
+                  </div>
+                  <div class="method-annotations">@IsTest</div>
+                  <div class="method-signature">
+                    static void testCreateAccountsRecallTaskBatch()
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="footer">
+
+          <div>
+            <a href="https://github.com/no-stack-dub-sack/apexdox-vs-code" target="_blank" rel="noopener noreferrer">
+              Powered By ApexDox VS Code
+            </a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>
